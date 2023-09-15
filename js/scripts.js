@@ -2,7 +2,7 @@
 function newItem() {
   //javascript
   //1. Adding a new item to the list of items:
-  let li = $("#list");
+  let li = $("<li></li>");
   let inputValue = $("#input").val();
   li.append(inputValue);
 
@@ -15,7 +15,7 @@ function newItem() {
     alert("✋✋You must write something!✋✋");
   } else {
     let list = $("#list");
-    list.appendChild(li);
+    list.append(li);
   }
 
   //2. Crossing out an item from the list of items:
